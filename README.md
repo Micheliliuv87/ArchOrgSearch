@@ -11,9 +11,15 @@
 # How this should work 
 
 1. The ArchiveOrgSearch.py will first go and search for the word "Abortion" on Archive.org's TV section
-        - The result will contain any content and mentioning of "Abortion" in the content 
-2. Then it will first pick the last viewable creator (This is for reducing the amount of workload processed each time) 
-3. Then it will start requesting the following features : 
+        - The result will contain any content and mentioning of "Abortion" in the content (you can also edit the keyword you would like to search, and the creator filter)
+   ```
+           params = {
+            "q": "abortion",
+            "and[]": 'creator:"rt"'
+        }
+   ```
+3. Then it will first pick the last viewable creator (This is for reducing the amount of workload processed each time) 
+4. Then it will start requesting the following features : 
     - Unique Identifier
     - URL = base URL + Unique Identifier (which I will process later)
     - Title
@@ -22,7 +28,7 @@
     - Favorites
     - Number of Quotes
     - Script
-4. Then it will store all the content it has scraped into an Excel file.
+5. Then it will store all the content it has scraped into an Excel file.
 
 # Result 
 
