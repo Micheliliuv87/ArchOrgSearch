@@ -6,7 +6,7 @@
 
 # Completeness of This Project
 
-* Still in the development stage (Will likely finish in one or two weeks) 
+* V1 is completed, later version will be updated
 
 # How this should work 
 
@@ -18,8 +18,8 @@
             "and[]": 'creator:"rt"'
         }
    ```
-3. Then it will pick the last viewable creator (This is for reducing the amount of workload processed each time) 
-4. Then it will start requesting the following features within that creator filter: 
+3. It will pick the last viewable creator (This is for reducing the amount of workload processed each time) 
+4. It will start requesting the following features within that creator filter: 
     - Unique Identifier
     - URL = base URL + Unique Identifier (which I will process later)
     - Title
@@ -30,13 +30,4 @@
     - Script
 5. Then it will store all the content it has scraped into an Excel file.
 
-# Result 
-
-Saved 6339 entries
-ok
-
-----------------------------------------------------------------------
-Ran 1 test in 1423.164s
-
-# Updates on 01/23 
 
