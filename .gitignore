@@ -1,0 +1,4 @@
+segments/
+*.xlsx
+download_try.py
+download.py
