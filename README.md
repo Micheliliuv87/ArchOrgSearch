@@ -27,13 +27,4 @@
 
     2.2 **Since ArchiveOrg only allows 60s per video(likely for most videos) it is specialyl taken care of in the code**
 
-
-# Result 
-
-Saved 6339 entries
-ok
-
-----------------------------------------------------------------------
-Ran 1 test in 1423.164s
-
-# Updates on 01/23 
+# Updates on 05/26
