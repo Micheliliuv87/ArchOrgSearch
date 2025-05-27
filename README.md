@@ -28,3 +28,7 @@
     2.2 **Since ArchiveOrg only allows 60s per video(likely for most videos) it is specialyl taken care of in the code**
 
 # Updates on 05/26
+
+1. Made a bat file so you can run the two things as an application by one click.
+2. Make sure that you put all three files in the same folder so it can locate the correct address.
+3. Please let me know what you would like to update.
