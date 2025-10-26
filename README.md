@@ -4,6 +4,8 @@
   
 * This is easy to use for those who have experience in python
 
+* This is helpful to avoid being banned and triggering robot detection
+
 # Completeness of This Project
 
 * Still in the development stage (adding more complete features)
