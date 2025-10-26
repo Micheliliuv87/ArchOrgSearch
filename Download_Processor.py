@@ -5,7 +5,7 @@ import json
 import requests
 import pandas as pd
 
-# 1) Find all your Excel outputs in the working directory
+# Find all your Excel outputs in the working directory
 excel_paths = glob.glob("meta_data/*_abortion.xlsx")
 
 def scrape_duration(details_url, unique_id):
@@ -47,7 +47,7 @@ def download_segments(unique_id, duration, creator):
             print(f"[{unique_id}] ✖ Failed segment {segment_num}: {e}")
         segment_num += 1
 
-# 2) Loop over each Excel file
+# Loop over each Excel file
 for excel_path in excel_paths:
     creator = os.path.basename(excel_path).split("_")[0]
     print(f"\n=== Processing creator: {creator} (file: {excel_path}) ===")
@@ -57,12 +57,12 @@ for excel_path in excel_paths:
         uid = row["Unique Identifier"]
         url = row["URL"]
 
-        # 3) Scrape duration
+        # Scrape duration
         dur = scrape_duration(url, uid)
         if dur is None or dur == 0:
             continue
 
-        # 4) Download segments
+        # Download segments
         download_segments(uid, dur, creator)
 
 print("\nAll files processed.")
