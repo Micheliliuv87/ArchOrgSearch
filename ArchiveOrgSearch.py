@@ -1,5 +1,5 @@
 import unittest
-import urllib.parse  # Added missing import
+import urllib.parse  
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
@@ -8,7 +8,7 @@ from selenium.webdriver.firefox.options import Options
 import pandas as pd
 import time
 import re
-import os  # Add this import
+import os  
 
 class ArchiveOrgSearch(unittest.TestCase):
 
@@ -22,6 +22,7 @@ class ArchiveOrgSearch(unittest.TestCase):
         options.set_preference("general.useragent.override", 
             "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36")
         # Uncomment for headless mode
+        # Make sure you use your own useragent. you can check it by looking at the network pressing F12, click on one to see.
         # options.add_argument('--headless')
         self.driver = webdriver.Firefox(options=options)
 
@@ -34,7 +35,7 @@ class ArchiveOrgSearch(unittest.TestCase):
         creators = ["wncn", "wkrc"] # can update this list based on preferences 
 
         for creator in creators:
-            # 2) set up your params per‐creator
+            # 2) set up your params per‐creator, currently abortion
             params = {
                 "q": "abortion",
                 "and[]": f'creator:"{creator}"'
