@@ -10,7 +10,7 @@
 
 * Still in the development stage (adding more complete features)
 
-# How this should work 
+# How this works 
 
 1. ArchiveOrgSearch.py 
 
